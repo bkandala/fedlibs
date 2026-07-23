@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-07-20T22:52:59.725Z",
+  "blocks": [
+    {
+      "name": "cards",
+      "description": "cards block"
+    },
+    {
+      "name": "columns",
+      "description": "columns block"
+    },
+    {
+      "name": "footer",
+      "description": "footer block"
+    },
+    {
+      "name": "fragment",
+      "description": "fragment block"
+    },
+    {
+      "name": "header",
+      "description": "header block"
+    },
+    {
+      "name": "hero",
+      "description": "hero block"
+    },
+    {
+      "name": "widget",
+      "description": "widget block"
+    }
+  ]
+}

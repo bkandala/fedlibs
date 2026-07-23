@@ -1,0 +1,26 @@
+name: Publish block catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'blocks/**'
+      - 'scripts/generate-block-catalog.js'
+
+jobs:
+  publish-catalog:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: node scripts/generate-block-catalog.js
+      - name: Commit catalog if it changed
+        run: |
+          git config user.name "fedlibs-bot"
+          git config user.email "actions@github.com"
+          git diff --quiet blocks-catalog.json || (
+            git add blocks-catalog.json
+            git commit -m "chore: regenerate blocks-catalog.json [skip ci]"
+            git push
+          )

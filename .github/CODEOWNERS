@@ -1,0 +1,3 @@
+# New or changed shared blocks affect every consuming site — require
+# platform team review rather than letting them merge silently.
+/blocks/ @your-org/platform-team
