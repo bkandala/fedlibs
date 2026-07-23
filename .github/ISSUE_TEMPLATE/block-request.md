@@ -10,7 +10,7 @@ labels: block-request
 **What should the block do?** (attach a design/content example if you have one)
 
 **Does something close already exist in the catalog?**
-Check `https://main--fedlibs--{org}.aem.live/blocks-catalog.json` first —
+Check `https://main--fedlibs--bkandala.aem.live/blocks-catalog.json` first —
 if something's 80% of the way there, propose extending it instead of a
 net-new block.
 
